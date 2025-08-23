@@ -3,45 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D 設計作品集 - REN</title>
+  <title>3D Renders 展示</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-  <!-- 導覽列 -->
-  <header>
-    <h1>我的 3D 設計作品集</h1>
-    <p>室內設計｜3D 建模｜渲染</p>
-  </header>
-
-  <!-- 作品展示 -->
-  <section class="gallery">
-    <h2>作品展示</h2>
-    <div class="grid">
-      <img src="images/work1.jpg" alt="作品1">
-      <img src="images/work2.jpg" alt="作品2">
-      <img src="images/work3.jpg" alt="作品3">
-      <img src="images/work4.jpg" alt="作品4">
-      <img src="images/work5.jpg" alt="作品5">
-      <img src="images/work6.jpg" alt="作品6">
-      <img src="images/work7.jpg" alt="作品7">
-      <img src="images/work8.jpg" alt="作品8">
-      <img src="images/work9.jpg" alt="作品9">
-      <img src="images/work10.jpg" alt="作品10">
-      <img src="images/work11.jpg" alt="作品11">
-      <img src="images/work12.jpg" alt="作品12">
+  <h1>我的 3D 作品輪播</h1>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/work1.jpg" /></div>
+      <div class="swiper-slide"><img src="images/work2.jpg" /></div>
+      <div class="swiper-slide"><img src="images/work3.jpg" /></div>
     </div>
-  </section>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
-  <!-- 一鍵加入 LINE -->
-  <section class="contact">
-    <h2>聯絡我</h2>
-    <p>想合作或詢問更多，歡迎加入我的 LINE：</p>
-    <a href="https://line.me/ti/p/~你的LINE ID" target="_blank" class="line-btn">📲 一鍵加入 LINE</a>
-  </section>
+  <h2>VR360 環景展示</h2>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <a-scene embedded style="width:100%; height:400px;">
+    <a-sky src="images/vr360.jpg" rotation="0 -130 0"></a-sky>
+  </a-scene>
 
-  <!-- 頁尾 -->
-  <footer>
-    <p>© 2025 3D 設計作品集 | by REN</p>
-  </footer>
+  <div class="line-btn">
+    <a href="https://line.me/R/ti/p/@你的LINE_ID" target="_blank">
+      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0">
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
