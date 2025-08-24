@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>fd
+  <header>
     <h1>專業 3D 渲染與建模</h1>
     <h2>精通 3DMAX、VRay、Corona | 快速交件 | 溝通順暢</h2>
     <p style="font-size:35px; line-height:1.6;">
@@ -46,10 +46,12 @@
 
 <div style="text-align:center;">
   <!-- 外框加圓角 -->
-  <div style="display:inline-block; border-radius:30px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-    <a-scene embedded style="width:2400px; height:1200px; display:block;">
-      <a-sky src="images/3601.jpg" rotation="0 -130 0"></a-sky>
-    </a-scene>
+  <div style="display:inline-block; border-radius:30px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2); width:100%; max-width:2400px;">
+    <div style="position:relative; padding-top:50%;"> <!-- 高度比例控制，可調整 50% -->
+      <a-scene embedded style="position:absolute; top:0; left:0; width:100%; height:100%; display:block;">
+        <a-sky src="images/3601.jpg" rotation="0 -130 0"></a-sky>
+      </a-scene>
+    </div>
   </div>
 </div>
 
@@ -97,12 +99,16 @@
     </div>
   </section>
 
-<!-- ✅ LINE 聯絡方式 -->
-<div class="line-btn" style="text-align:center; margin-top:5px;">
-  <br><br>
-  <img src="images/qr.jpg" alt="我的 LINE QR Code" width="400" style="border:1px solid #ccc; border-radius:10px;">
-  <p style="margin-top:10px; color:#555; font-size:36px;">掃描 QR Code 即可加好友</p>
+<!-- ✅ LINE 一鍵加好友 (無底色) -->
+<div class="line-btn" style="text-align:center; margin-top:20px;">
+  <a href="https://line.me/R/ti/p/ccz9990" target="_blank" 
+     style="display:inline-block; color:#ffffff; font-size:36px; font-weight:bold; 
+            padding:20px 50px; border-radius:30px; text-decoration:none; border:2px solid #00ff40; 
+            box-shadow:0 4px 6px rgba(0,0,0,0.1); transition:0.3s;">
+    一鍵加 LINE 好友
+  </a>
 </div>
+
 
 <!-- 電話 & Email -->
 <hr style="margin:0px auto; width:400px; border:0; border-top:1px solid #ddd;">
