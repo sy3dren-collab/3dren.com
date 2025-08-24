@@ -26,7 +26,7 @@ header h2 {
 }
 
 header p {
-  font-size: 20px;  /* 頁首介紹文字 */
+  font-size: 16px;  /* 頁首介紹文字 */
 }
 
 /* 輪播提示文字 */
@@ -102,7 +102,7 @@ header p {
   color: #555;
   width: fit-content;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   
 }
 
@@ -110,7 +110,7 @@ header p {
 .line-btn a {
   display: inline-block;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   padding: 20px 50px;
   border-radius: 30px;
@@ -127,7 +127,7 @@ header p {
 
 /* 聯絡資訊 */
 .contact-info {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
   margin-top: 20px;
@@ -136,4 +136,33 @@ header p {
 .contact-info a {
   color: #333;
   text-decoration: none;
+}
+/* 三個白色價格框的容器 */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2px;   /* 🔹 調小框與框之間的距離 */
+  margin-bottom: 40px; /* 🔹 底部留白，避免黏到按鈕 */
+}
+
+/* 每個價格框 */
+.pricing .card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  max-width: 300px; /* 控制最大寬度 */
+}
+
+/* LINE 按鈕獨立區塊 */
+.line-btn {
+  display: inline-block;
+  padding: 10x 20x;
+  background: #06C755;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 30px; /* 🔹 與上面白色框保持距離 */
 }
