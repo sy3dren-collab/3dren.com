@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<script src="script.js"></script>
-
 
 <body>
-  <header>
-  <h1>專業 3D 渲染與建模</h1>
-  <h2>精通 3DMAX、VRay、Corona | 快速交件 | 溝通順暢</h2>
-  <p>20 年經驗，提供高品質作品與 VR 360 環景服務，滿足室內設計、產品建模與可視化需求。</p>
-</header>
-  <p>(看作品請左右滑動)</p>
+  <header>fd
+    <h1>專業 3D 渲染與建模</h1>
+    <h2>精通 3DMAX、VRay、Corona | 快速交件 | 溝通順暢</h2>
+    <p style="font-size:35px; line-height:1.6;">
+  20 年經驗，提供高品質作品與 VR 360 環景服務，滿足室內設計、產品建模與可視化需求。
+</p>
+  </header>
+
+  <p style="font-size:35px; line-height:1.6;">(看作品請左右滑動)</p>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="images/work1.jpg" /></div>
@@ -32,67 +33,108 @@
       <div class="swiper-slide"><img src="images/work11.jpg" /></div>
       <div class="swiper-slide"><img src="images/work12.jpg" /></div>
     </div>
+
+    <!-- 分頁點 -->
     <div class="swiper-pagination"></div>
+
+    <!-- 左右箭頭 -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
+<h2 style="text-align:center;">VR360 環景展示</h2>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 
-  <h2>VR360 環景展示</h2>
-  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <a-scene embedded style="width:100%; height:400px;">
-    <a-sky src="images/vr360.jpg" rotation="0 -130 0"></a-sky>
-  </a-scene>
+<div style="text-align:center;">
+  <!-- 外框加圓角 -->
+  <div style="display:inline-block; border-radius:30px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+    <a-scene embedded style="width:2400px; height:1200px; display:block;">
+      <a-sky src="images/3601.jpg" rotation="0 -130 0"></a-sky>
+    </a-scene>
+  </div>
+</div>
 
   <section id="pricing" style="padding: 60px 20px; background: #f8f9fa; text-align: center;">
-  <h2 style="font-size: 2em; margin-bottom: 20px;">價格方案</h2>
-  <p style="color: #666; margin-bottom: 40px;">以下為基本收費方式，可依專案需求彈性調整</p>
+    <h2 style="font-size: 5em; margin-bottom: 20px;">價格方案</h2>
+    <p style="color: #666; margin-bottom: 40px;">以下為基本收費方式，可依專案需求彈性調整</p>
 
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <!-- 方案一 -->
-    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 280px;">
-      <h3>室內單場景</h3>
-      <p style="font-size: 28px; font-weight: bold; margin: 15px 0;">NT$ 2,000 起</p>
-      <ul style="list-style: none; padding: 0; margin: 0 auto; color: #555; width: fit-content; text-align: left;">
-        <li>✔ 高品質渲染</li>
-        <li>✔ 基本燈光與材質</li>
-        <li>✔ 可修改3次</li>
-        <li>✔ 3~5 天交件</li>
-      </ul>
-    </div>
+    <div style="display: flex; justify-content: center; gap: 120px; flex-wrap: wrap;">
+      <!-- 方案一 -->
+      <div style="background: white; padding: 30px; border-radius: 60px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px;">
+        <h3>室內單場景</h3>
+        <p style="font-size: 50px; font-weight: bold; margin: 15px 0;">NT$ 2,000 起</p>
+        <ul style="list-style:none; padding:0; margin:0 auto; color:#555; width:fit-content; text-align:left; font-size:34px;">
+ 
+          <li>✔ 高品質渲染</li>
+          <li>✔ 基本燈光與材質</li>
+          <li>✔ 可修改3次</li>
+          <li>✔ 3~5 天交件</li>
+        </ul>
+      </div>
 
-    <!-- 方案二 -->
-    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 280px;">
-      <h3>完整室內專案</h3>
-      <p style="font-size: 28px; font-weight: bold; margin: 15px 0;">NT$ 20,000 起</p>
-      <ul style="list-style: none; padding: 0; margin: 0 auto; color: #555; width: fit-content; text-align: left;">
-        <li>✔ 高品質渲染</li>
-        <li>✔ 高品質燈光與材質</li>
-        <li>✔ 可修改5次</li>
-        <li>✔ 彈性交件時間</li>
-      </ul>
-    </div>
+      <!-- 方案二 -->
+      <div style="background: white; padding: 30px; border-radius:  60px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px;">
+        <h3>完整室內專案</h3>
+        <p style="font-size: 50px; font-weight: bold; margin: 15px 0;">NT$ 20,000 起</p>
+       <ul style="list-style:none; padding:0; margin:0 auto; color:#555; width:fit-content; text-align:left; font-size:34px;">
+          <li>✔ 高品質渲染</li>
+          <li>✔ 高品質燈光與材質</li>
+          <li>✔ 可修改5次</li>
+          <li>✔ 彈性交件時間</li>
+        </ul>
+      </div>
 
-    <!-- 方案三 -->
-    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 280px;">
-      <h3>客製化需求</h3>
-      <p style="font-size: 28px; font-weight: bold; margin: 15px 0;">面議</p>
-      <ul style="list-style: none; padding: 0; margin: 0 auto; color: #555; width: fit-content; text-align: left;">
-        <li>✔ 建築外觀</li> 
-        <li>✔ VR360</li> 
-        <li>✔ 產品建模</li> 
-        <li>✔ 彈性交件時間</li>
-      </ul>
+      <!-- 方案三 -->
+      <div style="background: white; padding: 30px; border-radius:  60px; box-shadow: 0 14px 10px rgba(0,0,0,0.1); width: 400px;">
+        <h3>客製化需求</h3>
+        <p style="font-size: 50px; font-weight: bold; margin: 15px 0;">面議</p>
+        <ul style="list-style:none; padding:0; margin:0 auto; color:#555; width:fit-content; text-align:left; font-size:34px;">
+          <li>✔ 建築外觀</li> 
+          <li>✔ VR360</li> 
+          <li>✔ 產品建模</li> 
+          <li>✔ 彈性交件時間</li>
+        </ul>
+      </div>
     </div>
+  </section>
+
+<!-- ✅ LINE 聯絡方式 -->
+<div class="line-btn" style="text-align:center; margin-top:5px;">
+  <br><br>
+  <img src="images/qr.jpg" alt="我的 LINE QR Code" width="400" style="border:1px solid #ccc; border-radius:10px;">
+  <p style="margin-top:10px; color:#555; font-size:36px;">掃描 QR Code 即可加好友</p>
+</div>
+
+<!-- 電話 & Email -->
+<hr style="margin:0px auto; width:400px; border:0; border-top:1px solid #ddd;">
+<div style="text-align:center;">
+  <div style="display:inline-block; text-align:left; font-size:46px; line-height:1.8; margin-top:0px;">
+    <p style="margin:5px 0;">
+      <strong>📞 行動電話：</strong>
+      <a href="tel:0920760889" style="color:#333; text-decoration:none;">0920-760889</a>
+    </p>
+    <p style="margin:5px 0;">
+      <strong>🟢 LINE ID：</strong>
+      <span style="color:#333;">ccz9990</span>
+    </p>
+    <p style="margin:5px 0;">
+      <strong>📧 Email：</strong>
+      <a href="mailto:ccz9990@hotmail.com" style="color:#333; text-decoration:none;">ccz9990@hotmail.com</a>
+    </p>
   </div>
-</section>
-
-  <div class="line-btn">
-    <a href="https://line.me/R/ti/p/ccz9990" target="_blank">
-      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0">
-    </a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: false, // ✅ 不要自動循環
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // ✅ 可以點擊圓點切換
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
 </html>
