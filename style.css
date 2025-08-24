@@ -166,4 +166,13 @@ header p {
   text-decoration: none;
   margin-top: 60px; /* 🔹 與上面白色框保持距離 */
 }
-
+@media (max-width: 768px) {
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; }
+  p  { font-size: 14px; }
+  img { max-width: 100%; height: auto; }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
