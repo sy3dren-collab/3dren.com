@@ -164,5 +164,6 @@ header p {
   font-size: 1.2em;
   border-radius: 30px;
   text-decoration: none;
-  margin-top: 30px; /* 🔹 與上面白色框保持距離 */
+  margin-top: 60px; /* 🔹 與上面白色框保持距離 */
 }
+
