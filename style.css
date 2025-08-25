@@ -176,3 +176,29 @@ header p {
 .swiper-button-prev {
   display: none !important;
 }
+
+
+  #faq {
+    max-width: 600px;    /* FAQ 區塊最大寬度 */
+    margin: 0 auto 80px;      /* 讓區塊水平置中 */
+    padding: 20px;
+    text-align: left;    /* 區塊內的文字靠左 */
+  }
+
+  #faq h2 {
+    text-align: center;  /* FAQ 標題置中 */
+    margin-bottom: 5px;
+  }
+
+  .faq-item {
+    margin-bottom:0px; /* 問答區塊間距縮小 */
+  }
+
+  .faq-item h3 {
+    margin: 0px 0;       /* 問題上下間距縮小 */
+  }
+
+  .faq-item p {
+    margin: 0px 0 10px;  /* 答案間距縮小 */
+  }
+
