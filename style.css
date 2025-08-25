@@ -179,7 +179,7 @@ header p {
 
 
   #faq {
-    max-width: 600px;    /* FAQ 區塊最大寬度 */
+    max-width: 500px;    /* FAQ 區塊最大寬度 */
     margin: 0 auto 80px;      /* 讓區塊水平置中 */
     padding: 20px;
     text-align: left;    /* 區塊內的文字靠左 */
@@ -201,4 +201,5 @@ header p {
   .faq-item p {
     margin: 0px 0 10px;  /* 答案間距縮小 */
   }
+
 
