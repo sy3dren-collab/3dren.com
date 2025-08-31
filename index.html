@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHXNZRPL1E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHXNZRPL1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NHXNZRPL1E');
+  </script>
 
-  gtag('config', 'G-NHXNZRPL1E');
-</script>
   <title>專業 3D 渲染與建模 | 室內設計、建築外觀、產品建模</title>
   <meta name="description" content="專業 3D 渲染與建模服務，精通 3ds Max、VRay、Corona，提供建築外觀、室內設計、產品建模與 VR360，高擬真度渲染，快速交件，專案彈性調整。">
 
@@ -26,7 +26,11 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- JSON-LD 結構化資料 -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,88 +41,59 @@
     "email": "ccz9990@hotmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "台灣"
+      "streetAddress": "XX 路 XX 號",
+      "addressLocality": "台中市",
+      "postalCode": "400",
+      "addressCountry": "TW"
     },
     "url": "https://www.3dren.com",
-    "sameAs": [
-      "https://line.me/R/ti/p/ccz9990"
-    ]
+    "sameAs": ["https://line.me/R/ti/p/ccz9990"]
   }
   </script>
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
   <header>
-  <h1>專業 3D 渲染與建模 | 室內設計・建築外觀・產品建模</h1>
-  <h2>精通 3ds Max・VRay・Corona｜高擬真渲染｜快速交件</h2>
-  <p>
-    我們專注於 <strong>3D 渲染</strong> 與 <strong>建模服務</strong>，
-    使用 <strong>3ds Max、VRay、Corona</strong> 進行高品質的視覺化呈現。
-    無論是 <strong>建築外觀設計</strong>、<strong>室內設計渲染</strong>、
-    <strong>產品建模</strong> 或 <strong>VR360 展示</strong>，
-    都能提供擬真效果，協助客戶快速決策，提升專案價值。
-  </p>
-</header>
+    <h1>專業 3D 渲染與建模 | 室內設計・建築外觀・產品建模</h1>
+    <h2>精通 3ds Max・VRay・Corona｜高擬真渲染｜快速交件</h2>
+    <p>
+      我們專注於 <strong>3D 渲染</strong> 與 <strong>建模服務</strong>，
+      使用 <strong>3ds Max、VRay、Corona</strong> 進行高品質的視覺化呈現。
+      無論是 <strong>建築外觀設計</strong>、<strong>室內設計渲染</strong>、
+      <strong>產品建模</strong> 或 <strong>VR360 展示</strong>，
+      都能提供擬真效果，協助客戶快速決策，提升專案價值。
+    </p>
+  </header>
 
-<section id="portfolio">
-  <h2>3D 渲染作品展示</h2>
-  <p class="swiper-tip">(看作品請左右滑動)</p>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/work1.webp" alt="室內設計 3D 渲染效果圖" loading="lazy">
+  <section id="portfolio">
+    <h2>3D 渲染作品展示</h2>
+    <p class="swiper-tip">(看作品請左右滑動)</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/work1.webp" alt="室內設計 3D 渲染效果圖" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work2.webp" alt="建築外觀 VRay 渲染作品" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work3.webp" alt="產品建模 3ds Max 渲染展示" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work4.webp" alt="現代風室內設計 3D 視覺化" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work5.webp" alt="VRay 渲染室內空間效果" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work6.webp" alt="建築外觀渲染案例" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work7.webp" alt="3D 產品建模展示" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work8.webp" alt="高擬真室內設計效果" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work9.webp" alt="室內裝潢渲染作品" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work10.webp" alt="VRay 與 Corona 渲染效果" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work11.webp" alt="3D 建築視覺化案例" loading="lazy" width="800" height="600"></div>
+        <div class="swiper-slide"><img src="images/work12.webp" alt="高品質室內建模渲染" loading="lazy" width="800" height="600"></div>
       </div>
-      <div class="swiper-slide">
-        <img src="images/work2.webp" alt="建築外觀 VRay 渲染作品" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work3.webp" alt="產品建模 3ds Max 渲染展示" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work4.webp" alt="現代風室內設計 3D 視覺化" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work5.webp" alt="VRay 渲染室內空間效果" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work6.webp" alt="建築外觀渲染案例" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work7.webp" alt="3D 產品建模展示" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work8.webp" alt="高擬真室內設計效果" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work9.webp" alt="室內裝潢渲染作品" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work10.webp" alt="VRay 與 Corona 渲染效果" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work11.webp" alt="3D 建築視覺化案例" loading="lazy">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/work12.webp" alt="高品質室內建模渲染" loading="lazy">
-      </div>
-    </div>
-
-
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next" aria-label="下一張"></div>
+      <div class="swiper-button-prev" aria-label="上一張"></div>
     </div>
   </section>
 
   <section id="pricing">
     <h2>價格方案</h2>
     <p>以下為基本收費方式，可依專案需求彈性調整</p>
-
     <div style="display: flex; justify-content: center; gap:40px; flex-wrap: wrap;">
-      <div class="plan-box">
+      <article class="plan-box">
         <h3>室內單場景</h3>
         <h3>NT$ 2,000 起</h3>
         <ul>
@@ -127,9 +102,8 @@
           <li>✔ 可修改3次</li>
           <li>✔ 3~5 天交件</li>
         </ul>
-      </div>
-
-      <div class="plan-box">
+      </article>
+      <article class="plan-box">
         <h3>完整室內專案</h3>
         <h3>NT$ 20,000 起</h3>
         <ul>
@@ -138,9 +112,8 @@
           <li>✔ 可修改5次</li>
           <li>✔ 彈性交件時間</li>
         </ul>
-      </div>
-
-      <div class="plan-box">
+      </article>
+      <article class="plan-box">
         <h3>客製化需求</h3>
         <h3>面議</h3>
         <ul>
@@ -149,55 +122,59 @@
           <li>✔ 產品建模</li> 
           <li>✔ 彈性交件時間</li>
         </ul>
-      </div>
+      </article>
     </div>
   </section>
 
-  <div class="line-btn">
-    <a href="https://line.me/R/ti/p/ccz9990" target="_blank">一鍵加 LINE 好友</a>
+  <div class="line-btn" style="text-align:center; margin:30px 0;">
+    <a href="https://line.me/R/ti/p/ccz9990" target="_blank" rel="noopener">一鍵加 LINE 好友</a>
   </div>
 
-  <hr style="margin:20px auto; width:300px; border:0; border-top:1px solid #ddd;">
+  <hr style="margin:20px auto; width:80%; max-width:300px; border:0; border-top:1px solid #ddd;">
 
   <section id="contact">
     <h2>聯絡方式</h2>
     <div class="contact-info">
-      <p><strong>📞 行動電話：</strong><a href="tel:0920760889">0920-760889</a></p>
+      <p><strong>📞 行動電話：</strong><a href="tel:0920760889" rel="nofollow">0920-760889</a></p>
       <p><strong>🟢 LINE ID：</strong>ccz9990</p>
       <p><strong>📧 Email：</strong><a href="mailto:ccz9990@hotmail.com">ccz9990@hotmail.com</a></p>
     </div>
   </section>
-    <style>
-  #contact p {
-    font-size: 26px; /* 調整字體大小 */
-    line-height: 1; /* 建議加行距讓閱讀更舒服 */
-  }
-</style>
+  <style>
+    #contact p {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+  </style>
 
   <section id="faq">
     <h2>常見問題 (FAQ)</h2>
+    <div class="faq-item">
       <h3>需要準備什麼資料？</h3>
-      <p>請提供施工圖CAD檔案，需要製作的空間角度，參考資料，越完整越好 。</p>
+      <p>請提供施工圖CAD檔案，需要製作的空間角度，參考資料，越完整越好。</p>
+    </div>
     <div class="faq-item">
       <h3>交件時間多久？</h3>
-      <p>一般單一場景約 1~2天 先出草圖確認，確認後約 3~5天 交件 。</p>
+      <p>一般單一場景約 1~2 天先出草圖確認，確認後約 3~5 天交件。</p>
     </div>
     <div class="faq-item">
       <h3>可以修改幾次？</h3>
-      <p>方案中皆包含3次修改，確保最終成果符合需求。客製化專案可協商彈性調整。</p>
+      <p>方案中皆包含 3 次修改，確保最終成果符合需求。客製化專案可協商彈性調整。</p>
     </div>
     <div class="faq-item">
       <h3>支援哪些檔案格式？</h3>
       <p>可提供 JPG、PNG、TIFF、以及 VR360 全景圖，亦可依需求輸出其他格式。</p>
     </div>
-     <h3>可以做 VR360 環景展示嗎？</h3>
-    <p>可以，我們提供高品質 VR360 展示，方便客戶沉浸式體驗設計。</p>
-  </div>
+    <div class="faq-item">
+      <h3>可以做 VR360 環景展示嗎？</h3>
+      <p>可以，我們提供高品質 VR360 展示，方便客戶沉浸式體驗設計。</p>
+    </div>
   </section>
 
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       loop: false,
       pagination: {
         el: ".swiper-pagination",
@@ -209,32 +186,55 @@
       },
     });
   </script>
+
+  <!-- FAQ JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "需要準備什麼資料？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "請提供施工圖CAD檔案，需要製作的空間角度，參考資料，越完整越好。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "交件時間多久？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "一般單一場景約 1~2 天先出草圖確認，確認後約 3~5 天交件。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "可以修改幾次？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "方案中皆包含 3 次修改，確保最終成果符合需求。客製化專案可協商彈性調整。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "支援哪些檔案格式？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可提供 JPG、PNG、TIFF、以及 VR360 全景圖，亦可依需求輸出其他格式。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "可以做 VR360 環景展示嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以，我們提供高品質 VR360 展示，方便客戶沉浸式體驗設計。"
+        }
+      }
+    ]
+  }
+  </script>
 </body>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "交件時間多久？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "一般單一場景約 3~5 天，完整專案依規模 7~14 天，可彈性調整。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "可以做 VR360 環景展示嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "可以，我們提供高品質 VR360 展示，方便客戶沉浸式體驗設計。"
-      }
-    }
-  ]
-}
-</script>
-
 </html>
-
-
