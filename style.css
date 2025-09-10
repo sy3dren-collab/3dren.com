@@ -38,7 +38,7 @@ header p {
 /* 輪播容器 */
 .swiper {
   width: 100%;
-  max-width: 2400px;
+  max-width: 800px;
   height: 70vh;
   margin: auto;
   position: relative;
@@ -47,6 +47,7 @@ header p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+
 /* 輪播圖片 */
 .swiper-slide img {
   width: 100%;
@@ -54,6 +55,23 @@ header p {
   object-fit: cover;
   border-radius: 30px;
 }
+.vr360-container {
+    margin: 40px auto;
+    width: 800px;         /* 桌機固定 */
+    max-width: 100%;      /* 手機自適應 */
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;     /* 白底才能顯示陰影 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 加深陰影 */
+  }
+
+  .vr360-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+  }
+</style>
 
 /* 分頁圓點 */
 .swiper-pagination-bullet {
@@ -103,7 +121,6 @@ header p {
   width: fit-content;
   text-align: left;
   font-size: 16px;
-  
 }
 
 /* LINE 按鈕 */
@@ -137,12 +154,13 @@ header p {
   color: #333;
   text-decoration: none;
 }
+
 /* 三個白色價格框的容器 */
 .pricing {
   display: flex;
   justify-content: center;
-  gap: 2px;   /* 🔹 調小框與框之間的距離 */
-  margin-bottom: 40px; /* 🔹 底部留白，避免黏到按鈕 */
+  gap: 2px;   /* 框與框之間的距離 */
+  margin-bottom: 40px; /* 底部留白 */
 }
 
 /* 每個價格框 */
@@ -164,42 +182,44 @@ header p {
   font-size: 1.2em;
   border-radius: 30px;
   text-decoration: none;
-  margin-top: 60px; /* 🔹 與上面白色框保持距離 */
+  margin-top: 60px; /* 與上面白色框保持距離 */
 }
+
+/* 響應式設定 */
 @media (max-width: 768px) {
   h1 { font-size: 24px; }
   h2 { font-size: 18px; }
   p  { font-size: 14px; }
   img { max-width: 100%; height: auto; }
 }
+
+/* 隱藏電腦版箭頭 */
 .swiper-button-next,
 .swiper-button-prev {
   display: none !important;
 }
 
+/* FAQ 區塊 */
+#faq {
+  max-width: 500px;        /* FAQ 區塊最大寬度 */
+  margin: 0 auto 80px;     /* 讓區塊水平置中 */
+  padding: 20px;
+  text-align: left;        /* 內文靠左 */
+}
 
-  #faq {
-    max-width: 500px;    /* FAQ 區塊最大寬度 */
-    margin: 0 auto 80px;      /* 讓區塊水平置中 */
-    padding: 20px;
-    text-align: left;    /* 區塊內的文字靠左 */
-  }
+#faq h2 {
+  text-align: center;      /* FAQ 標題置中 */
+  margin-bottom: 5px;
+}
 
-  #faq h2 {
-    text-align: center;  /* FAQ 標題置中 */
-    margin-bottom: 5px;
-  }
+.faq-item {
+  margin-bottom: 0px;      /* 問答區塊間距縮小 */
+}
 
-  .faq-item {
-    margin-bottom:0px; /* 問答區塊間距縮小 */
-  }
+.faq-item h3 {
+  margin: 0px 0;           /* 問題上下間距縮小 */
+}
 
-  .faq-item h3 {
-    margin: 0px 0;       /* 問題上下間距縮小 */
-  }
-
-  .faq-item p {
-    margin: 0px 0 10px;  /* 答案間距縮小 */
-  }
-
-
+.faq-item p {
+  margin: 0px 0 10px;      /* 答案間距縮小 */
+}
