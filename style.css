@@ -1,225 +1,57 @@
-body {
-  font-family: "Microsoft JhengHei", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* 頁首 */
-header {
-  background: #222;
-  color: white;
-  padding: 40px 20px;
-}
-
-header h1 {
-  font-size: 40px;  /* 大標題 */
-  margin: 0;
-}
-
-header h2 {
-  font-size: 20px;  /* 副標題 */
-  margin-top: 20px;
-}
-
-header p {
-  font-size: 16px;  /* 頁首介紹文字 */
-}
-
-/* 輪播提示文字 */
-.swiper-tip {
-  font-size: 14px;
-  margin: 20px 0;
-}
-
-/* 輪播容器 */
-.swiper {
-  width: 100%;
-  max-width: 800px;
-  height: 70vh;
-  margin: auto;
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-
-/* 輪播圖片 */
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-}
-.vr360-container {
-    margin: 40px auto;
-    width: 800px;         /* 桌機固定 */
-    max-width: 100%;      /* 手機自適應 */
-    border-radius: 30px;
-    overflow: hidden;
-    background: #fff;     /* 白底才能顯示陰影 */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 加深陰影 */
-  }
-
-  .vr360-container iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    display: block;
-  }
-</style>
-
-/* 分頁圓點 */
-.swiper-pagination-bullet {
-  background: #ff6600;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: #ff0000;
-}
-
-/* 價格方案 */
-#pricing h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#pricing p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.plan-box {
-  background: white;
-  padding: 10px;
-  border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 200px;
-}
-
-.plan-box h3 {
-  font-size: 24px;
-}
-
-.plan-box .price {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.plan-box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  color: #555;
-  width: fit-content;
-  text-align: left;
-  font-size: 16px;
-}
-
-/* LINE 按鈕 */
-.line-btn a {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px 50px;
-  border-radius: 30px;
-  text-decoration: none;
-  border: 2px solid #00ff40;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  background: #06C755;
-}
-
-.line-btn a:hover {
-  background: #04a944;
-}
-
-/* 聯絡資訊 */
-.contact-info {
-  font-size: 20px;
-  line-height: 1;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* 三個白色價格框的容器 */
-.pricing {
-  display: flex;
-  justify-content: center;
-  gap: 2px;   /* 框與框之間的距離 */
-  margin-bottom: 40px; /* 底部留白 */
-}
-
-/* 每個價格框 */
-.pricing .card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex: 1;
-  max-width: 300px; /* 控制最大寬度 */
-}
-
-/* LINE 按鈕獨立區塊 */
-.line-btn {
-  display: inline-block;
-  padding: 10x 20x;
-  background: #06C755;
-  color: white;
-  font-size: 1.2em;
-  border-radius: 30px;
-  text-decoration: none;
-  margin-top: 60px; /* 與上面白色框保持距離 */
-}
-
-/* 響應式設定 */
-@media (max-width: 768px) {
-  h1 { font-size: 24px; }
-  h2 { font-size: 18px; }
-  p  { font-size: 14px; }
-  img { max-width: 100%; height: auto; }
-}
-
-/* 隱藏電腦版箭頭 */
-.swiper-button-next,
-.swiper-button-prev {
-  display: none !important;
-}
-
-/* FAQ 區塊 */
-#faq {
-  max-width: 500px;        /* FAQ 區塊最大寬度 */
-  margin: 0 auto 80px;     /* 讓區塊水平置中 */
-  padding: 20px;
-  text-align: left;        /* 內文靠左 */
-}
-
-#faq h2 {
-  text-align: center;      /* FAQ 標題置中 */
-  margin-bottom: 5px;
-}
-
-.faq-item {
-  margin-bottom: 0px;      /* 問答區塊間距縮小 */
-}
-
-.faq-item h3 {
-  margin: 0px 0;           /* 問題上下間距縮小 */
-}
-
-.faq-item p {
-  margin: 0px 0 10px;      /* 答案間距縮小 */
-}
+:root { color-scheme: light; --ink:#252826; --muted:#626862; --accent:#256344; --paper:#faf9f6; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:80px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,"Microsoft JhengHei",sans-serif; line-height:1.8; }
+a { color:var(--accent); text-underline-offset:4px; }
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible { outline:3px solid #bf7d28; outline-offset:5px; }
+.skip-link { position:absolute; left:16px; top:-100px; background:white; padding:12px; z-index:10; }
+.skip-link:focus { top:12px; }
+nav { display:flex; align-items:center; gap:24px; padding:16px max(20px,calc((100% - 1100px)/2)); background:#fff; border-bottom:1px solid #e3e3db; }
+nav a { text-decoration:none; white-space:nowrap; }
+.brand { margin-right:auto; font-size:22px; font-weight:800; letter-spacing:.12em; color:var(--ink); }
+header { padding:70px 24px; background:#222a25; color:#fff; text-align:center; }
+header h1 { max-width:900px; margin:12px auto; font-size:clamp(28px,4.4vw,52px); line-height:1.35; letter-spacing:.03em; }
+header h2 { font-size:clamp(17px,2.2vw,23px); font-weight:500; }
+header p { max-width:760px; margin:20px auto; color:#e2e8e1; }
+header .eyebrow { font-size:12px; letter-spacing:.18em; }
+.hero-actions { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:30px; }
+.button,.line-btn a { display:inline-block; border:1px solid var(--accent); background:var(--accent); color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:650; }
+header .button { background:#fff; border-color:#fff; color:var(--ink); }
+header .secondary { background:transparent; color:#fff; }
+main > section { max-width:1100px; padding:54px 24px; margin:auto; }
+h2 { font-size:clamp(24px,3vw,32px); line-height:1.4; margin:0 0 20px; }
+section > h2,section > p { text-align:center; }
+section > p { color:var(--muted); margin:0 auto 28px; max-width:760px; }
+h3 { font-size:20px; line-height:1.5; }
+.swiper { max-width:800px; margin:auto; }
+.swiper-wrapper { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; border-radius:12px; background:#e9e8e1; }
+.swiper-slide { flex:0 0 100%; min-width:0; scroll-snap-align:start; }
+.swiper-slide a { display:block; }
+.swiper-slide img { display:block; width:100%; height:clamp(300px,65vw,560px); object-fit:contain; }
+.gallery-status { text-align:center; color:var(--muted); font-size:14px; }
+.gallery-controls { display:flex; justify-content:center; gap:16px; }
+[hidden] { display:none !important; }
+button { font:inherit; cursor:pointer; padding:10px 20px; border:1px solid #aab4aa; background:#fff; color:var(--ink); border-radius:6px; min-height:44px; }
+button:disabled { opacity:.45; cursor:default; }
+.vr360-container { max-width:800px; margin:auto; overflow:hidden; border-radius:12px; background:#e9e8e1; }
+.vr360-container iframe { width:100%; height:clamp(320px,60vw,560px); border:0; display:block; }
+.service-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.service-grid article { border-top:2px solid var(--accent); padding:8px 8px 0; }
+.service-grid p,.process-list p { color:var(--muted); }
+.process-list { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; padding-left:24px; }
+.process-list li { padding-left:4px; }
+.plan-box { background:#fff; padding:26px; border:1px solid #dedfd6; border-radius:12px; width:280px; }
+.plan-box h3 { margin:0 0 16px; }
+.plan-box ul { padding:0; list-style:none; }
+.line-btn { text-align:center; }
+.line-btn a:hover,.button:hover { filter:brightness(.93); }
+#contact { text-align:center; background:#eeeee7; border-radius:12px; }
+.contact-info { font-size:clamp(16px,2.2vw,22px); overflow-wrap:anywhere; }
+#faq { max-width:800px; }
+.faq-item { border-bottom:1px solid #dedfd6; padding:18px 0; }
+.faq-item h3 { margin:0 0 8px; }
+.faq-item p { margin:0; color:var(--muted); }
+footer { text-align:center; background:#222a25; color:white; padding:32px 20px; }
+footer a { color:#d5e7d7; }
+@media(max-width:768px) { nav { gap:16px; padding:14px 16px; font-size:14px; } .brand { font-size:18px; } header { padding:42px 20px; } main > section { padding:38px 16px; } .service-grid,.process-list { grid-template-columns:1fr; gap:12px; } .process-list h3 { margin-bottom:8px; } .process-list p { margin-top:0; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
